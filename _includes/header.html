@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
+<html lang="zh-Hant-TW" prefix="og: http://ogp.me/ns#" class="han-init">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,20 +78,11 @@
         }
     }
     </script>
-    <!-- Google廣告 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5890195662151709"crossorigin="anonymous"></script>
-    <!-- end -->
+    
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     {% if site.google.analytics_id %}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google.analytics_id }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.google.analytics_id }}');
-      </script>
+      
     {% endif %}
 
 </head>
