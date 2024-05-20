@@ -1,7 +1,7 @@
 <footer class="container">
   <div class="site-footer" role="contentinfo">
     <div class="copyright left mobile-block">
-      © 2019-2024
+      © 2022-2024
       <span title="{{ site.author}}">{{ site.author }}</span>
       <a href="javascript:window.scrollTo(0,0)" class="right mobile-visible">TOP</a>
     </div>
@@ -39,6 +39,19 @@
     // hljs.initHighlightingOnLoad();
   });
 </script>
+
+{% if site.google.analytics_id %}
+<div style="display:none">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google.analytics_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google.analytics_id }}');
+  </script>
+</div>
+{% endif %}
 
 </body>
 

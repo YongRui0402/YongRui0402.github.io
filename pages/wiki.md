@@ -8,7 +8,7 @@ menu: 維基
 permalink: /wiki/
 ---
 
-<!-- > 記多少命令和快捷鍵會讓腦袋爆炸呢？
+> 記多少命令和快捷鍵會讓腦袋爆炸呢？
 
 <ul class="listing">
 {% for wiki in site.wiki %}
@@ -16,4 +16,4 @@ permalink: /wiki/
 <li class="listing-item"><a href="{{ wiki.url }}">{{ wiki.title }}</a></li>
 {% endif %}
 {% endfor %}
-</ul> -->
+</ul>
